@@ -6,7 +6,7 @@ layout: default
 # Behind the Noise  
 **Conformal Quantile Regression Drives Emergent Representations**
 
-Our framework uses ensembles of lightweight, randomly-architected neural networks to denoise scientific images, quantify uncertainty of these predictions, and reveal semantic patterns in the all data, without any labeled data. 
+Our framework uses ensembles of lightweight, randomly-architected neural networks to denoise scientific images, quantify uncertainty of these predictions, and reveal semantic patterns in the data, without needing to provide human annotated labels. 
 
 ---
 
