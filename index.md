@@ -38,8 +38,16 @@ While we-  that is, the minimizer during training - do our best to get decent qu
 
 Below an sample of the results is shown, including line cuts with the associated prediction intervals
 
-![ Ensembling networks](assets/images/Suplementary_Figure2.png)
+![Enselmbing results](assets/images/Suplementary_Figure2.png)
 *Figure 3: Denoising synthetic data with assymetric, heteroskedastic noise.*
+
+We apply these techniques on SEM-EDX data
+![SEM-EDX example](assets/images/Suplementary_Figure3.png)
+*Figure 4: SEM-EDX training.*
+
+If we now run this on unsee data, we get decent 
+![SEM-EDX example](assets/images/Figure2.png)
+*Figure 5: SEM-EDX testing.*
 
 
 
