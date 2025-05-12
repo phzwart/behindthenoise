@@ -25,16 +25,23 @@ Scientific imaging often demands long exposures to achieve signal clarity. We in
 The proposed workflow uses small networks constructed from a stochastic network generator. These networks have a low number of parameters, are not super deep, and explore scale space via dilated convolutions. Fine tuning the networks is straightforward, and typically only requieres tuning the depth - more finetuning can be done to manage memory requirements or tuning the complexity. 
 
 ![Random networks](assets/images/Suplementary_Figure1.png)  
-*Figure: Random networks and their performance on synthetic data.*
+*Figure 1: Random networks and their performance on synthetic data.*
 
-Note that the networks we generate have two main parts: a convolutional neural network that serves as an encoder yielding pixel-level latent vec tors. These latent vectors are pushed into decoders that model lower, median and upper quantiles. The performance shown in the figure above are based on the estimated median.  
+Note that the networks we generate have two main parts: a convolutional neural network that serves as an encoder yielding pixel-level latent vec tors. These latent vectors are pushed into decoders that model lower, median and upper quantiles, Figure 1-A. The performance of these networks as a function of hyper parameters are shown in Figure 1-B. 
 
-Once we have determined a set of hyper parameters we like, we can generate a set of random networks. The ensemble of networks can be used to improve our quantile estimates 
+Once we have determined a set of hyper parameters we like, we can generate a set of random networks. The ensemble of networks can be used to improve our quantile estimates by simple averaging the outputs:
 
 ![ Ensembling networks](assets/images/Figure1.png)
-*Figure: Ensembles improve the estimates of quantiles*
+*Figure 2: Ensembles improve the estimates of the predicted quantiles. Results are obtained by averaging over 20 different ensembles of random networks per trial.*
 
-While we do our best to get quantile estimates, they *always* need to be caliberated to ensure that the stated coverage (say 90%) is valid on unseen data. The way this is done is via [conformalized quantile regression](https://arxiv.org/abs/1905.03222) 
+While we-  that is, the minimizer during training - do our best to get decent quantile estimates, they *always* need to be caliberated to ensure that the stated coverage (say 90%) is valid on unseen data. The way this is done is via [conformalized quantile regression](https://arxiv.org/abs/1905.03222).
+
+Below an sample of the results is shown, including line cuts with the associated prediction intervals
+
+![ Ensembling networks](assets/images/Suplementary_Figure2.png)
+*Figure 3: Denoising synthetic data with assymetric, heteroskedastic noise.*
+
+
 
 ## Datasets
 
