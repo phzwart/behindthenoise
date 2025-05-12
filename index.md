@@ -26,6 +26,14 @@ Scientific imaging often demands long exposures to achieve signal clarity. We in
 - **X-ray computed tomography of soil**: [phzwart/BTN_XCT](https://huggingface.co/datasets/phzwart/BTN_XCT)  
 - **SEM-EDX of soil**: [phzwart/BTN_SEM-EDX](https://huggingface.co/datasets/phzwart/BTN_SEM-EDX)  
 
+## Code
+The research carried out in the Behind The Noise paspert is based on out DLSIA libraries.
+- [DLSIA (Deep Learning for Scientific Imaging & Automation)](https://github.com/phzwart/dlsia)
+
+Training was facilitated by our sliding tensor data chopper qlty: 
+- [qlty (Tensor chunking & stitching for PyTorch)](https://github.com/phzwatr/qlty)  
+
+
 ## Arxiv Link to Paper
 
 
