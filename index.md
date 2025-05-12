@@ -19,6 +19,10 @@ Scientific imaging often demands long exposures to achieve signal clarity. We in
 - **Reveals latent structure** by clustering ensemble latent outputs, producing interpretable segmentation without any supervision.
 
 ---
+![Rand networks](assets/images/Suplementary_Figure1.png)  
+*Figure: Random networks and their performance on synthetic data.*
+
+
 
 ## Datasets
 
