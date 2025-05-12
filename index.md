@@ -19,10 +19,15 @@ Scientific imaging often demands long exposures to achieve signal clarity. We in
 - **Reveals latent structure** by clustering ensemble latent outputs, producing interpretable segmentation without any supervision.
 
 ---
-![Rand networks](assets/images/Suplementary_Figure1.png)  
+
+## Outline
+
+The proposed workflow uses small networks constructed from a stochastic network generator. These networks have a low number of parameters, are not super deep, and explore scale space via dilated convolutions. Fine tuning the networks is straightforward, and typically only requieres tuning the depth - more finetuning can be done to manage memory requirements or tuning the complexity. 
+
+![Random networks](assets/images/Suplementary_Figure1.png)  
 *Figure: Random networks and their performance on synthetic data.*
 
-
+Once 
 
 ## Datasets
 
