@@ -1,0 +1,9 @@
+---
+# no variables needed here
+---
+@import "cayman";
+
+/* hide the GitHub button in the header */
+.header-button {
+  display: none !important;
+}
