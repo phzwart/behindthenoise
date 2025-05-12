@@ -47,34 +47,47 @@ Below is a sample of denoising results with asymmetric, heteroskedastic noise:
 
 ### SEM-EDX
 
-We apply our method to three-channel SEM-EDX maps:
+Scanning Electron Microscopy with Energy Dispersive X-ray spectroscopy (SEM-EDX) is a rich analytical technique that provide qualitative insights in material composition, revealing structure and elemental composition. Collecting data can be time-intensive though, especially when you want to have really good resolution and good signal to noise. Here we investigate if we can learn an efficient denoisier on limited data, and use this to clean up large section images that normalluy would take weaks to measure at decent noise levels. We start with a small patch. The high-noise image took 7 seconds to collect, the low noise one took 2 hours. The data consists of 3 channels, measuring the Si, Al and Fe content. Our training data consists of 10 7 second images of the patch below, and a single 2 hour image of the same area. 
 
 ![SEM-EDX example](assets/images/Suplementary_Figure3.png)  
 *Figure 4: SEM-EDX training data.*
+
+The denoising is of course not a detailed as the 2 hour image, but we can get a good idea of what is going on 
 
 On unseen samples, denoising yields clear material contrasts:
 
 ![SEM-EDX example](assets/images/Figure2.png)  
 *Figure 5: Denoising SEM-EDX results on unseen data.*
 
-Clustering the ensemble latent vectors uncovers meaningful classes:
+Inspecting the predicted quantile levels for the Fe channel, allows us to make good estimates of where potential, regions of interest are to re-measure at longer count rates. 
+![SEM-EDX FE example](assets/images/Suplementary_Figure5.png)  
+
+It turns out that when we cluster the ensemble latent vectors of our networks, we un uncover meaningful classes:
 
 ![SEM-EDX latents](assets/images/Suplementary_Figure7.png)  
 *Figure 7: Latent clusters from SEM-EDX data.*
 
+
 ### X-ray Computed Tomography
 
-Our approach also works on 3D XCT volumes:
+Our approach also works on 3D XCT volumes. Here we denoise a fast collected dataset given one that was collected at lower throughput, with more frames. We use 3D variants of the networks used above, to make sure that we can fully utilize the 3D nature of the data.
 
 ![XCT example](assets/images/Suplementary_Figure6.png)  
 *Figure 6: Denoising 3D XCT data.*
 
-Latent clustering highlights structural features:
+Again, when we cluster our latent vectors, we highlights structural features:
 
 ![XCT latents](assets/images/Figure3.png)  
 *Figure 8: Latent clusters from XCT data.*
 
 ---
+
+## Conclusions
+
+What began as a simple denoising tool has revealed a much richer story: by cleaning up noisy images we don’t just recover clearer signals—we uncover hidden, semantic structure in the data. The calibrated denoising we demonstrate can guide more efficient experimental designs, while the emergent clusters in latent space point to where manual annotations or downstream analyses should focus.  
+
+For a deeper dive into methods and results please see the full paper.  
+
 
 ## Datasets
 
