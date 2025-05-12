@@ -1,0 +1,8 @@
+# _config.yml
+title: Behind the Noise
+# pick any of the official Pages themes:
+remote_theme: pages-themes/cayman@v0.2.0
+
+# make sure the plugin is enabled
+plugins:
+  - jekyll-remote-theme
