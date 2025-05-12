@@ -45,7 +45,9 @@ Below is a sample of denoising results with asymmetric, heteroskedastic noise:
 
 ## Applications
 
-### SEM-EDXScanning Electron Microscopy coupled with Energy Dispersive X-ray Spectroscopy (SEM-EDX) gives us detailed, qualitative maps of a material’s elemental makeup. The downside? Getting both high resolution and low noise often means very long scan times. In this study, we ask whether a denoiser trained on just a handful of images can recover large-area SEM-EDX maps that would normally take weeks to record at good signal-to-noise. We start on a small patch: one “noisy” scan collected in 7 seconds and a “clean” reference scan collected over 2 hours. Each image has three channels—Si, Al, and Fe—and our training set consists of ten 7-second noisy scans plus that single 2-hour low-noise scan of the same region.
+### SEM-EDX
+
+Scanning Electron Microscopy coupled with Energy Dispersive X-ray Spectroscopy (SEM-EDX) gives us detailed, qualitative maps of a material’s elemental makeup. The downside? Getting both high resolution and low noise often means very long scan times. In this study, we ask whether a denoiser trained on just a handful of images can recover large-area SEM-EDX maps that would normally take weeks to record at good signal-to-noise. We start on a small patch: one “noisy” scan collected in 7 seconds and a “clean” reference scan collected over 2 hours. Each image has three channels—Si, Al, and Fe—and our training set consists of ten 7-second noisy scans plus that single 2-hour low-noise scan of the same region.
 
 ![SEM-EDX example](assets/images/Suplementary_Figure3.png)  
 *Figure 4: SEM-EDX training data.*
