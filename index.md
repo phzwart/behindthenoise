@@ -27,7 +27,14 @@ The proposed workflow uses small networks constructed from a stochastic network 
 ![Random networks](assets/images/Suplementary_Figure1.png)  
 *Figure: Random networks and their performance on synthetic data.*
 
-Once 
+Note that the networks we generate have two main parts: a convolutional neural network that serves as an encoder yielding pixel-level latent vec tors. These latent vectors are pushed into decoders that model lower, median and upper quantiles. The performance shown in the figure above are based on the estimated median.  
+
+Once we have determined a set of hyper parameters we like, we can generate a set of random networks. The ensemble of networks can be used to improve our quantile estimates 
+
+![ Ensembling networks](assets/images/Figure1.png)
+*Figure: Ensembles improve the estimates of quantiles*
+
+While we do our best to get quantile estimates, they *always* need to be caliberated to ensure that the stated coverage (say 90%) is valid on unseen data. The way this is done is via [conformalized quantile regression](https://arxiv.org/abs/1905.03222) 
 
 ## Datasets
 
