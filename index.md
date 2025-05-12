@@ -1,4 +1,4 @@
-\---
+---
 title: Behind the Noise
 layout: default
 ---
