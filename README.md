@@ -1,1 +1,1 @@
-Data and infio accompanying the "Behind the Noise" paper
+Data and info accompanying the "Behind the Noise" paper
