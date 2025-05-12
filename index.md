@@ -90,9 +90,9 @@ For a deeper dive into methods and results please see the full paper.
 
 ## Datasets
 
-- **Synthetic data**: [phzwart/BTN_Synthetic](https://huggingface.co/datasets/phzwart/BTN_Synthetic)  
-- **X-ray CT of soil**: [phzwart/BTN_XCT](https://huggingface.co/datasets/phzwart/BTN_XCT)  
-- **SEM-EDX of soil**: [phzwart/BTN_SEM-EDX](https://huggingface.co/datasets/phzwart/BTN_SEM-EDX)  
+- [Synthetic data](https://huggingface.co/datasets/phzwart/BTN_Synthetic)  
+- [X-ray CT of soil](https://huggingface.co/datasets/phzwart/BTN_XCT)  
+- [SEM-EDX of soil](https://huggingface.co/datasets/phzwart/BTN_SEM-EDX)  
 
 ---
 
