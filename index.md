@@ -85,7 +85,7 @@ Again, when we cluster our latent vectors, we highlights structural features, su
 
 What began as a simple denoising tool has revealed a much richer story: by cleaning up noisy images we don’t just recover clearer signals—we uncover hidden, semantic structure in the data. The calibrated denoising we demonstrate can guide more efficient experimental designs, while the emergent clusters in latent space point to where manual annotations or downstream analyses should focus.  
 
-For a deeper dive into methods and results please see the full paper.  
+For a deeper dive into methods and results please see the full paper (Arxiv-TDB).  
 
 
 ## Datasets
