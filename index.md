@@ -91,6 +91,8 @@ For a deeper dive into methods and results please see the [full paper](https://a
 
 ## Datasets
 
+Data and trained models are here - more organized notebooks are forthcoming
+
 - [Synthetic data](https://huggingface.co/datasets/phzwart/BTN_Synthetic)  
 - [X-ray CT of soil](https://huggingface.co/datasets/phzwart/BTN_XCT)  
 - [SEM-EDX of soil](https://huggingface.co/datasets/phzwart/BTN_SEM-EDX)  
