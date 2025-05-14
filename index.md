@@ -7,6 +7,7 @@ layout: default
 **Conformal Quantile Regression Drives Emergent Representations**
 
 Our approach uses ensembles of small, randomly-generated neural networks to denoise scientific images, quantify prediction uncertainty, and reveal hidden structures in the data—all without any hand-labeled annotations.
+A more detailed description is available [here](https://arxiv.org/abs/2505.08176).
 
 ---
 
@@ -85,7 +86,7 @@ Again, when we cluster our latent vectors, we highlights structural features, su
 
 What began as a simple denoising tool has revealed a much richer story: by cleaning up noisy images we don’t just recover clearer signals—we uncover hidden, semantic structure in the data. The calibrated denoising we demonstrate can guide more efficient experimental designs, while the emergent clusters in latent space point to where manual annotations or downstream analyses should focus.  
 
-For a deeper dive into methods and results please see the full paper (Arxiv-TDB).  
+For a deeper dive into methods and results please see the [full paper](https://arxiv.org/abs/2505.08176).  
 
 
 ## Datasets
