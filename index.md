@@ -33,7 +33,7 @@ Each network has two parts: a convolutional encoder that maps each pixel to a la
 After selecting preferred hyperparameters, we build an ensemble and average their quantile outputs:
 
 ![Ensembling networks](assets/images/Figure1.png)  
-*Figure 2: Averaged quantile estimates from 20 random-network ensembles.*
+*Figure 2: Averaged quantile estimates from random-network ensembles of different sizes.*
 
 Even with careful training, predicted intervals must be calibrated to achieve nominal coverage (e.g., 90%). We use [conformalized quantile regression](https://arxiv.org/abs/1905.03222) for this step.
 
